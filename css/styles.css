@@ -1,0 +1,434 @@
+:root {
+  /* Fonts */
+  --main-font: 'Roboto', sans-serif;
+  --scn-font: 'Raleway', sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #212121;
+  --scn-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+  --accent-cl: #2196f3;
+
+  /* Background colors */
+  --main-bg-cl: #2f303a;
+  --light-bg-cl: #f5f5f5;
+
+  /* Others */
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
+}
+
+/* reset */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* .header,
+.section,
+.footer {
+  outline: 2px solid red;
+  outline-offset: -2px;
+} */
+
+.pecul-subtitle,
+.team-subtitle,
+.prtf-tex {
+  color: var(--scn-txt-cl);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--main-txt-cl);
+}
+
+.addr-link,
+.hero-title {
+  color: var(--light-txt-cl);
+}
+
+.prtf-btn,
+.hero-btn {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+/* Header */
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: var(--light-txt-cl);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--scn-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.logo-up {
+  margin-right: 93px;
+}
+
+.main-nav {
+  margin-right: auto;
+}
+
+.nav-list,
+.cnt-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 0;
+}
+
+.accent {
+  color: var(--accent-cl);
+}
+
+.light {
+  color: var(--light-txt-cl);
+}
+
+.dark {
+  color: #000000;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.cnt-link:hover,
+.cnt-link:focus {
+  color: var(--accent-cl);
+}
+
+.current:visited {
+  color: var(--accent-cl);
+}
+
+.nav-link {
+  padding-top: 32px;
+  display: block;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.cnt-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  color: var(--scn-txt-cl);
+  letter-spacing: 0.02em;
+}
+
+.header-group {
+  display: flex;
+  align-items: center;
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--main-bg-cl);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-title {
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--accent-cl);
+  color: var(--light-txt-cl);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+}
+
+/* Peculiarities */
+
+.pecul-list {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0;
+}
+
+.pecul-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+}
+
+.pecul-item {
+  width: 270px;
+}
+
+/* About */
+
+.about {
+  padding-top: 0;
+}
+
+.about-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.about-list {
+  display: flex;
+  padding-inline-start: 0;
+  gap: 30px;
+}
+
+/* Team */
+
+.team {
+    background: #f5f4fa;
+}
+
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+  display: flex;
+  padding-inline-start: 0;
+  justify-content: space-between;
+}
+
+/* .team-img {
+  padding-bottom: 30px;
+} */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-img,
+.img-link {
+  background-color: var(--light-txt-cl);
+}
+
+.team-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.team-main-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+.team-title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team-subtitle {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+/* Portfolio */
+
+.prtf {
+  background-color: white;
+}
+
+.prtf-list {
+  display: flex;
+  padding-inline-start: 0;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.prtf-btn {
+  border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
+  
+}
+
+.prtf-btn,
+.active {
+  background-color: #eeeeee;
+}
+
+.prtf-btn:hover {
+  background-color: var(--accent-cl);
+  color: var(--light-txt-cl);
+}
+
+.img-item {
+  background-color: var(--light-txt-cl);
+  border: 1px solid #eeeeee;
+  
+}
+
+.img-list {
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* .img-link {
+  margin-bottom: 20px;
+} */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.active {
+  background-color: var(--accent-cl);
+  color: var(--light-txt-cl);
+  cursor: pointer;
+}
+
+.prtf-btn,
+.active {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  font-family: inherit;
+}
+
+.prtf-text {
+  padding: 20px 24px;
+}
+
+.prtf-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.prtf-subtitle {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--main-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.addr-list {
+  padding-inline-start: 0;
+}
+
+.addr-item {
+  margin-bottom: 9px;
+}
+
+.addr-item:last-child {
+  margin-bottom: 0;
+}
+
+.addr-link {
+  font-style: normal;
+}
+
+.addr {
+  margin-top: 20px;
+}
+
+.tm {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tm:hover,
+.tm:focus {
+  color: var(--accent-cl);
+}
