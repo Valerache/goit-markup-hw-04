@@ -251,8 +251,12 @@ img {
 
 /* Team */
 
-.team {
+/* .team {
     background: #f5f4fa;
+} */
+ 
+.team {
+  background-color: #f5f4fa;
 }
 
 .team-item {
@@ -271,10 +275,6 @@ img {
 /* .team-img {
   padding-bottom: 30px;
 } */
-
-.team {
-  background-color: #f5f4fa;
-}
 
 .team-img,
 .img-link {
