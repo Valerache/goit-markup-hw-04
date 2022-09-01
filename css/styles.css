@@ -163,13 +163,27 @@ img {
 }
 
 .cnt-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   font-weight: 500;
   line-height: calc(16 / 14);
   color: var(--scn-txt-cl);
   letter-spacing: 0.02em;
 }
 
-.header-group {
+.cnt-icon {
+  fill: none;
+  stroke: var(--scn-txt-cl);
+}
+
+.cnt-link:hover .cnt-icon,
+.cnt-link:focus .cnt-icon {
+  stroke: var(--accent-cl);
+}
+
+.header-group {v
   display: flex;
   align-items: center;
 }
@@ -282,8 +296,7 @@ img {
 }
 
 .team-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 30px 10px;
 }
 
 .team-main-title {
