@@ -183,7 +183,7 @@ img {
   stroke: var(--accent-cl);
 }
 
-.header-group {v
+.header-group {
   display: flex;
   align-items: center;
 }
@@ -228,6 +228,26 @@ img {
 
 /* Peculiarities */
 
+.icon {
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon:hover,
+.icon:focus {
+  border: 2px solid var(--accent-cl);
+}
+
+.pecul-icon:hover,
+.pecul-icon:focus{
+  stroke: var(--accent-cl);
+}
 .pecul-list {
   display: flex;
   justify-content: space-between;
@@ -351,6 +371,20 @@ img {
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
   fill: #ffffff;
+}
+
+/* Clients */
+
+.clients-title {
+margin-bottom: 50px;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+color: var(--main-txt-cl);
+}
+
+.clients-list {
+  display: flex;
 }
 
 /* Portfolio */
