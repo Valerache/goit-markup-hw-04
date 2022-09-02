@@ -58,12 +58,12 @@ img {
   margin: 0 auto;
 }
 
-/* .header,
+.header,
 .section,
 .footer {
   outline: 2px solid red;
   outline-offset: -2px;
-} */
+}
 
 .pecul-subtitle,
 .team-subtitle,
@@ -174,8 +174,7 @@ img {
 }
 
 .cnt-icon {
-  fill: none;
-  stroke: var(--scn-txt-cl);
+  fill: var(--scn-txt-cl);
 }
 
 .cnt-link:hover .cnt-icon,
@@ -199,7 +198,8 @@ img {
     url(../images/overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -407,11 +407,13 @@ img {
   fill: #afb1b8;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-cl);
 }
 
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-cl);
 }
 
@@ -452,7 +454,8 @@ img {
   border: 1px solid #eeeeee;
 }
 
-.img-item:hover {
+.img-item:hover,
+.img-item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 }
 
@@ -463,10 +466,6 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-
-/* .img-link {
-  margin-bottom: 20px;
-} */
 
 .visually-hidden {
   position: absolute;
@@ -511,6 +510,7 @@ img {
 .prtf-subtitle {
   font-size: 16px;
   line-height: calc(30 / 16);
+  color: var(--scn-txt-cl);
 }
 
 /* Footer */
@@ -523,6 +523,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-text {
@@ -542,7 +543,6 @@ img {
   line-height: calc(16 / 14);
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 12px;
 }
 
 .socials-link-footer {
