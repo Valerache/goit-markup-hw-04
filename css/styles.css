@@ -58,12 +58,12 @@ img {
   margin: 0 auto;
 }
 
-.header,
+/* .header,
 .section,
 .footer {
   outline: 2px solid red;
   outline-offset: -2px;
-}
+} */
 
 .pecul-subtitle,
 .team-subtitle,
@@ -179,7 +179,7 @@ img {
 
 .cnt-link:hover .cnt-icon,
 .cnt-link:focus .cnt-icon {
-  stroke: var(--accent-cl);
+  fill: var(--accent-cl);
 }
 
 .header-group {
